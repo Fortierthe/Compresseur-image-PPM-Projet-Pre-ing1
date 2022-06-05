@@ -50,7 +50,7 @@ int block_diff_or_luma(unsigned char pixel[],unsigned char pixelPrecedent[], uns
 
 
 
-void compress(){	//----------DEBUT COMPRESSION----------------
+void compress(){	//----------START OF COMPRESSION----------------
 	PPM_IMG* ppm;	
 	FILE * fichier;
 	unsigned char cache[64][3] =  {0};	// Creation of the cache of 64 pixel values stored as (0,0,0)
@@ -172,6 +172,6 @@ void compress(){	//----------DEBUT COMPRESSION----------------
 	ppmClose(ppm);
 	taux_compression(nomPPM, nom);
 	free(nom);
-	free(nomPPM);
+	free(nomPPM);			// COMPRESSION END
 }
 
